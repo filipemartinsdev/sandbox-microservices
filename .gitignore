@@ -5,3 +5,11 @@ auth-service/src/main/resources/*.pub
 
 *.pub
 *.key
+
+auth-service/target/
+auth-service/target/*
+auth-service/.idea
+
+core-service/.graddle
+core-service/build
+core-service/.idea
