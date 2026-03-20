@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="boot2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.smallrye.common.smallrye-common-constraint-2.16.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.quarkus.quarkus-value-registry-3.32.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.smallrye.common.smallrye-common-os-2.16.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.quarkus.quarkus-bootstrap-runner-3.32.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.quarkus.quarkus-vertx-latebound-mdc-provider-3.32.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.smallrye.common.smallrye-common-expression-2.16.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.smallrye.common.smallrye-common-io-2.16.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.quarkus.quarkus-classloader-commons-3.32.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.quarkus.quarkus-development-mode-spi-3.32.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/org.crac.crac-1.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.smallrye.common.smallrye-common-net-2.16.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.smallrye.common.smallrye-common-cpu-2.16.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/org.jboss.logging.jboss-logging-3.6.2.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.smallrye.common.smallrye-common-ref-2.16.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/io.smallrye.common.smallrye-common-function-2.16.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/lib/boot/org.jboss.logmanager.jboss-logmanager-3.2.1.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

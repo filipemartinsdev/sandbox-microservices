@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="quarkus2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/quarkus/transformed-bytecode.jar!/" />
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/quarkus/generated-bytecode.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

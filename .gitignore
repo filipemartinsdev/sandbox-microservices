@@ -1,0 +1,7 @@
+.env
+
+auth-service/src/main/resources/*.key
+auth-service/src/main/resources/*.pub
+
+*.pub
+*.key

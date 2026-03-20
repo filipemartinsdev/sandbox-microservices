@@ -1,0 +1,14 @@
+localhost {
+    handle_path /auth/* {
+        reverse_proxy auth-service:8080
+    }
+
+    handle_path /core/* {
+        reverse_proxy core-service:8080
+    }
+
+    log {
+        output stdout
+        format json
+    }
+}

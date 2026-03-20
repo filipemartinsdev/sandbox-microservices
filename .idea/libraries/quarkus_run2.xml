@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="quarkus-run2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/core-service/build/quarkus-build/gen/quarkus-app/quarkus-run.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
