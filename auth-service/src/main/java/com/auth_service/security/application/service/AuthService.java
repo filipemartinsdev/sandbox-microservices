@@ -1,11 +1,9 @@
 package com.auth_service.security.application.service;
 
-import com.auth_service.security.application.dto.LoginRequest;
-import com.auth_service.security.application.dto.LoginResponse;
-import com.auth_service.security.application.dto.RefreshRequest;
-import com.auth_service.security.application.dto.Token;
+import com.auth_service.security.application.dto.*;
 import com.auth_service.security.domain.RefreshToken;
 import com.auth_service.security.domain.UserCredentials;
+import com.auth_service.security.domain.UserRole;
 import com.auth_service.security.infra.persistence.RefreshTokenRepository;
 import com.auth_service.security.infra.persistence.UserCredentialsRepository;
 import jakarta.transaction.Transactional;
@@ -16,6 +14,7 @@ import org.springframework.security.oauth2.jwt.*;
 import org.springframework.stereotype.Service;
 
 import java.time.Instant;
+import java.util.Set;
 import java.util.UUID;
 
 @Service
@@ -170,5 +169,19 @@ public class AuthService {
         refreshToken.setRevoked(true);
 
         refreshTokenRepository.save(refreshToken);
+    }
+
+    public void register(@Valid RegisterRequest registerRequest) {
+        if(userCredentialsRepository.existsByEmail(registerRequest.email()))
+            throw new BadCredentialsException("Email in use");
+
+        String encryptedPassword = passwordEncoder.encode(registerRequest.password());
+
+        var user = new UserCredentials();
+        user.setEmail(registerRequest.email());
+        user.setEncryptedPassword(encryptedPassword);
+        user.setRole(UserRole.USER);
+
+        userCredentialsRepository.save(user);
     }
 }

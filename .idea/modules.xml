@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core-service.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/microservices-sandbox.iml" filepath="$PROJECT_DIR$/.idea/microservices-sandbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sandbox-microservices.iml" filepath="$PROJECT_DIR$/.idea/sandbox-microservices.iml" />
     </modules>
   </component>
 </project>
