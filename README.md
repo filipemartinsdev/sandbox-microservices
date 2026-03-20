@@ -1,6 +1,12 @@
 # Microservices Sandbox
 
-Projeto de estudo, aplicando conhecimentos em Arquitetura de microserviços e Observabilidade.
+Projeto de estudo para aplicar conhecimentos em Arquitetura de Microserviços e Observabilidade.
+
+## Features
+- [x] Servidor Caddy configurado (Proxy Reverso + API Gateway).
+- [x] Observabilidade com Prometheus + Grafana.
+- [x] Microserviço de autenticação.
+- [x] Microserviço leve para testes (Quarkus)
 
 ## Tecnologias
 
@@ -15,6 +21,25 @@ Projeto de estudo, aplicando conhecimentos em Arquitetura de microserviços e Ob
 - OpenSSL (RSA Keys Generator)
 - Docker & Docker Compose
 - PostgreSQL & Redis
+
+## Como executar
+
+1. Gere o par de chaves RSA no microserviço de autenticação.
+````bash
+cd auth-service/src/main/resources
+openssl genrsa > app.key
+openssl rsa -in app.key -pubout -out app.pub
+````
+
+2. Execute os containers
+````bash
+docker compose -f docker-compose-dev.yaml up -d --build
+````
+
+- grafana: http://localhost:3000
+- prometheus: http://localhost:9090
+- auth-service: https://localhost/auth/*
+- core-service: https://localhost/core/*
 
 ## Serviços
 
