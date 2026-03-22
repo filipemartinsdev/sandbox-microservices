@@ -55,4 +55,11 @@ Serviço para visualização de métricas gerenciadas pelo _Prometheus_ tem temp
 
 ---
 
+## Arquitetura
+
+<img src="images/system.png" height="400">
+
+
+---
+
 _Made with ☕ by **Filipe Martins**_
